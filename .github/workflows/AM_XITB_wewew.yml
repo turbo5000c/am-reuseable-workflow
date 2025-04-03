@@ -1,0 +1,16 @@
+name: Run on Push Except Workflow Changes
+
+on:
+  push:
+    paths-ignore:
+      - '.github/workflows/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run a sample script
+        run: echo "This runs on push unless only .github/workflows/ changed."
