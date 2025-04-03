@@ -4,5 +4,11 @@ on:
   workflow_call:
 
 jobs:
-  use-reusable-workflow:
-    uses: ./.github/workflows/AM_XITB_reusable-build.yml
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        run: echo "running rebuild"
+#jobs:
+#  use-reusable-workflow:
+#    uses: ./.github/workflows/AM_XITB_reusable-build.yml
