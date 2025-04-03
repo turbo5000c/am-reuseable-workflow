@@ -6,6 +6,3 @@ on:
 jobs:
   use-reusable-workflow:
     uses: ./.github/workflows/AM_XITB_reusable-build.yml
-    with:
-      node-version: '20'
-      run-tests: true
