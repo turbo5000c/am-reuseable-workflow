@@ -1,9 +1,7 @@
 name: Run on Push Except Workflow Changes
 
 on:
-  push:
-    paths-ignore:
-      - '.github/workflows/**'
+  workflow_dispatch:
 
 jobs:
   build:
