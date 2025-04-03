@@ -1,10 +1,7 @@
 name: Main CI
 
 on:
-  push:
-    paths-ignore:
-      - '.github/workflows/**'
-
+  workflow_call:
 
 jobs:
   use-reusable-workflow:
