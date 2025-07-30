@@ -16,4 +16,4 @@ jobs:
     - name: Test placeholder
       run: |
         echo "Add your test steps here"
-        echo "Configure your specific testing framework and commands
+        echo "Configure your specific testing framework and commands"
