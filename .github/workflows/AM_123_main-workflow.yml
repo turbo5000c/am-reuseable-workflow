@@ -4,7 +4,7 @@ on:
   workflow_call:
     secrets:
       token:
-        required: true
+        required: false
 jobs:
   job2:
     uses: ./.github/workflows/AM_UNJT_am-generic-build.yml
