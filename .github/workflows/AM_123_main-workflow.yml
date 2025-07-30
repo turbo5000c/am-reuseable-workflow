@@ -4,9 +4,5 @@ on:
   workflow_call:
 
 jobs:
-  build-test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Detect build type
-        id: detect
-        run: echo test
+  job2:
+    uses: .github/workflows/AM_UNJT_am-generic-build.yml
