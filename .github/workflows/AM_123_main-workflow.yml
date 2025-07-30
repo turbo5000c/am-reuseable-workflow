@@ -5,4 +5,4 @@ on:
 
 jobs:
   job2:
-    uses: .github/workflows/AM_UNJT_am-generic-build.yml
+    uses: ./.github/workflows/AM_UNJT_am-generic-build.yml
