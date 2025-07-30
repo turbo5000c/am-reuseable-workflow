@@ -2,8 +2,9 @@ name: UNJT RX Build
 
 on:
   workflow_call:
-
+    secrets:
+      token:
+        required: true
 jobs:
-  build:
-    uses: ./.github/workflows/UNJT_am-generic-build.yml
-    secrets: inherit
+  job2:
+    uses: ./.github/workflows/AM_UNJT_am-generic-build.yml
