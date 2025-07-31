@@ -1,0 +1,12 @@
+name: UNJT RX Build
+
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: false
+jobs:
+  build:
+    needs: build-vars
+    uses: ./.github/workflows/AM_UNJT_am-generic-build.yml
+    secrets: inherit
