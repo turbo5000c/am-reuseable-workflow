@@ -7,7 +7,5 @@ on:
         required: false
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        run: echo "running rebuild"
+    uses: ./.github/workflows/AM_UNJT_am-generic-build.yml
+    secrets: inherit
