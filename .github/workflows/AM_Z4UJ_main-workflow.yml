@@ -1,0 +1,11 @@
+name: Z4UJ RX Build
+
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: false
+jobs:
+  build:
+    uses: ./.github/workflows/AM_Z4UJ_am-generic-build.yml
+    secrets: inherit
