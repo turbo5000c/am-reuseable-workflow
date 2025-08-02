@@ -1,5 +1,5 @@
-name: UNJT RX Build
-#test
+name: Z4UJ RX Build
+
 on:
   workflow_call:
     secrets:
@@ -7,5 +7,5 @@ on:
         required: false
 jobs:
   build:
-    uses: ./.github/workflows/AM_UNJT_am-generic-build.yml
+    uses: ./.github/workflows/AM_Z4UJ_am-generic-build.yml
     secrets: inherit
