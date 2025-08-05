@@ -1,0 +1,11 @@
+name: 6W2C RX Build
+
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: false
+jobs:
+  build:
+    uses: ./.github/workflows/AM_6W2C_am-generic-build.yml
+    secrets: inherit
