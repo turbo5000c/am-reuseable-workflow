@@ -1,0 +1,11 @@
+name: WN8M RX Build
+
+on:
+  workflow_call:
+    secrets:
+      token:
+        required: false
+jobs:
+  build:
+    uses: ./.github/workflows/AM_WN8M_am-generic-build.yml
+    secrets: inherit
