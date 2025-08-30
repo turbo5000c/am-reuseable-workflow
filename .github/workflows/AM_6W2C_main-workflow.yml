@@ -1,4 +1,4 @@
-name: 6W2C RX Build
+name: WN8M RX Build
 
 on:
   workflow_call:
@@ -7,5 +7,5 @@ on:
         required: false
 jobs:
   build:
-    uses: ./.github/workflows/AM_6W2C_am-generic-build.yml
+    uses: ./.github/workflows/AM_WN8M_am-generic-build.yml
     secrets: inherit
