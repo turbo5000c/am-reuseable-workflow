@@ -1,0 +1,38 @@
+# test
+name: 'CI/CD - Q7KQ'
+on:
+  workflow_call:
+    inputs:
+      project_code:
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        if: contains(toJson(github.event.inputs), 'Node.js')
+        run: |
+          curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+          sudo apt-get install -y nodejs
+
+      - name: Setup Python
+        if: contains(toJson(github.event.inputs), 'Python')
+        run: |
+          sudo apt update
+          sudo apt install python3
+
+      - name: Build
+        run: |
+          # Add build commands here
+
+      - name: Test
+        run: |
+          # Add test commands here
+
+outputs:
+  status: ${{ job.status }}
