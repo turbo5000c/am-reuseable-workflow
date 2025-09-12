@@ -1,5 +1,5 @@
 name: Generic Build
-'on':
+on:
   workflow_call:
     secrets:
       token:
