@@ -1,19 +1,19 @@
-name: Generic Build
-'on':
+name: am-generic-build2
+on:
   workflow_call:
-    secrets:
-      token:
+    inputs:
+      input_1:
+        description: ''
         required: false
+        type: string
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Build placeholder
-        run: >
+        run: |
           echo "Add your build steps here"
-
-          echo "This is a generic template - customize based on your project
-          needs"
+          echo "This is a generic template - customize based on your project needs"
       - name: Test placeholder
         run: |
           echo "Add your test steps here"
