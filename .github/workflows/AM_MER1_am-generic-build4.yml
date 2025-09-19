@@ -1,0 +1,31 @@
+name: Complete CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: |
+          echo 'Building the project'
+          # Add your build commands here
+      - name: Test
+        run: |
+          echo 'Running tests'
+          # Add your test commands here
+      - name: Code Quality
+        run: |
+          echo 'Checking code quality'
+          # Add your code quality analysis commands here
+      - name: Security Scan
+        run: |
+          echo 'Running security scan'
+          # Add your security scanning commands here
+      - name: Build Docker Image
+        run: |
+          echo 'Building Docker image'
+          # Add your Docker build commands here
